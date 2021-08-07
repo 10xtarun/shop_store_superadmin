@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.BUILD_ENV}`
+});
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
@@ -22,5 +26,15 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: "gatsby-source-mongodb",
+      options: {
+        dbName: "shopstore",
+        collection: "superadmin",
+        // nTX4aLRWcQRqvhEP
+        connectionString: process.env.MONGO_URI
+      }
+    }
+
   ],
 };
