@@ -10,7 +10,9 @@ const IndexPage = () => {
       res = await res.text()
       setMessage(res)
     }
-    getGreetings()
+    setTimeout(() => {
+      getGreetings()
+    }, 3000)
   })
   return (
     <main>
@@ -20,6 +22,7 @@ const IndexPage = () => {
       <h1>Shop Store</h1>
       <h3>Hi!!! Superadmin</h3>
       {console.log(message)}
+      {message && <h4>{message + ""}</h4>}
     </main>
   )
 }
