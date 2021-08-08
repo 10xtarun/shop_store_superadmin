@@ -13,7 +13,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "dev": "gatsby develop -p $PORT"
+    "dev": "BUILD_ENV=local && gatsby develop -p $PORT"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",

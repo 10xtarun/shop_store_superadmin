@@ -6,6 +6,7 @@ const greetingsHandler = (_req, res) => {
     res.status(200).json({
         message: "Hello From Serverless Functions!!!"
     })
+    res.end()
 }
 
 export default chain

@@ -1,5 +1,5 @@
 import React from "react"
-import Header from "./headers"
+import Header from "./header"
 import Footer from "./footer"
 import { Container, Grid, makeStyles, Paper } from "@material-ui/core"
 
@@ -25,7 +25,7 @@ export default function Layout({ children }) {
                     </Paper>
                 </Grid>
             </Grid>
-            <Grid container spacing={1}>
+            <Grid container spacing={2}>
                 <Grid item xs={12}>
                     <Container className="" maxWidth="xl">
                         <Paper className={classes.paper}>
