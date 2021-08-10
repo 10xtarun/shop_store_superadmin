@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import { Alert, AlertTitle } from "@material-ui/lab"
 import { IconButton } from "@material-ui/core"
 import { Close } from "@material-ui/icons"
+import { Link } from "gatsby"
 
 // markup
 const IndexPage = () => {
@@ -52,6 +53,7 @@ const IndexPage = () => {
         {console.log(error)}
         <h1>Shop Store</h1>
         <h3>Hi!!! Superadmin</h3>
+        <Link to="/superadmin">go to superadmin</Link>
         {message && <h4>{message + ""}</h4>}
       </main>
     </Layout>
